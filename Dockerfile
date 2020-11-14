@@ -30,5 +30,5 @@ RUN         apk add --upgrade --no-cache \
 COPY        entrypoint.sh /
 COPY        conf.d/etc/ /etc/
 EXPOSE      22
-VOLUME      ["/etc/ssh"]
+#VOLUME      ["/etc/ssh"]
 ENTRYPOINT  ["/entrypoint.sh"]
