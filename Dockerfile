@@ -18,6 +18,8 @@ RUN         apk add --upgrade --no-cache \
                     bash-completion \
                     rsync \
                     openssh=${OPENSSH_VERSION} \
+                    tmux \
+                    screen \
             && \
             mkdir -p /root/.ssh "${CONF_VOLUME}" "${AUTHORIZED_KEYS_VOLUME}" \
             && \
